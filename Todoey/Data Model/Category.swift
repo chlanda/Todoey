@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class Item: Object{
-   @objc dynamic  var title: String = ""
-   @objc dynamic  var done: Bool = false
+class Category: Object{
+   @objc dynamic  var name: String = ""
+    let items = List<Item>()
 }
